@@ -1,5 +1,7 @@
-# AutoVerticalTextview
-垂直滚动的textview，继承自TextSwitcher，抽出一个依赖库供以后备用
+# AutoTextRotation
+1、垂直滚动的textview，继承自TextSwitcher
+2、支持单张图片放大缩小
+抽出一个依赖库供以后备用
 
 
 ### 配置方法
