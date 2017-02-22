@@ -19,7 +19,7 @@
 module内*build.gradle*添加依赖:
   ````
   dependencies {
-    	        compile 'com.boomhe.autotextrotation:library:1.0.0'
+    	        compile 'com.boomhe.autotextrotation:library:1.1.0'
     	}
 
 ````
