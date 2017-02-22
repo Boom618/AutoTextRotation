@@ -36,17 +36,21 @@ xml文件里:
 
 activity里:
 ````
-        TextView.setTextList(titleList);//加入显示内容,集合类型
-        TextView.setText(26, 5, Color.RED);//设置属性,具体跟踪源码
-        TextView.setTextStillTime(3000);//设置停留时长间隔
-        TextView.setAnimTime(300);//设置进入和退出的时间间隔
-        //对单条文字的点击监听
-        TextView.setOnItemClickListener(new VerticalTextview.OnItemClickListener() {
-                    @Override
-                    public void onItemClick(int position) {
-                    // TO DO
-                    }
-                });
+        // 轮播文字
+		textView.setTextData(titleList);//加入显示内容,集合类型
+		textView.setText(26, 5, Color.RED);//设置属性,具体跟踪源码
+		textView.setTextTime(3000);//设置停留时长间隔
+		textView.setTextAnim(300);//设置进入和退出的时间间隔
+		//对单条文字的点击监听
+		textView.setOnItemClickListener(new TextRotation.OnItemClickListener() {
+			@Override
+			public void onItemClick(int position) {
+				// TO DO
+				Toast.makeText(RecordActivity1.this, "点击了 : " + titleList.get(position), Toast.LENGTH_SHORT).show();
+			}
+		});
+
+	}
 
 ````
         //开始滚动
