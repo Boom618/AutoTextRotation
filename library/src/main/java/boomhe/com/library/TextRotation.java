@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.ViewSwitcher;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 /**
  * Created by ${Hedong} on 17/2/21.
@@ -63,9 +64,9 @@ public class TextRotation extends TextSwitcher implements ViewSwitcher.ViewFacto
      * @param mTextColor 颜色
      */
     public void setText(float mTextSize, int mPadding, int mTextColor) {
-        mTextSize = mTextSize;
-        mPadding = mPadding;
-        mTextColor = mTextColor;
+        this.mTextSize = mTextSize;
+        this.mPadding = mPadding;
+        this.mTextColor = mTextColor;
 
     }
 
@@ -88,7 +89,13 @@ public class TextRotation extends TextSwitcher implements ViewSwitcher.ViewFacto
         mTextList.clear();
         mTextList.addAll(textList);
         currentId = -1;
+    }
 
+    // 设置数据源
+    public void setTextData(LinkedList<String> textList) {
+        mTextList.clear();
+        mTextList.addAll(textList);
+        currentId = -1;
     }
 
     // 设置间隔

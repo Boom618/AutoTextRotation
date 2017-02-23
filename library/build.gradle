@@ -41,7 +41,7 @@ def libName = "AutoTextRotation"
 //发布到组织名称名字，必须填写
 group = "com.boomhe.autotextrotation"
 // 版本号，下次更新是只需要更改版本号即可
-version = "1.1.0"
+version = "1.2.0"
 //上面配置后上传至JCenter后的编译路径是这样的： compile 'com.boomhe.autotextrotation:library:1.0.0'
 
 //生成源文件
@@ -123,7 +123,7 @@ bintray {
         //发布到JCenter上的项目名字
         name = libName
         //项目描述
-        desc = '自动轮播文字'
+        desc = '轮播文字 & 图片缩放'
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]

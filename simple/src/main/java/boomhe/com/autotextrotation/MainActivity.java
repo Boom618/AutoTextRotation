@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextRotation TextView;
     private ZoomImageView imageView;
-    private ArrayList<String> titleList = new ArrayList<String>();
+    private ArrayList<String> titleList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
